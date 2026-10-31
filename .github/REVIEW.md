@@ -2,8 +2,13 @@
 
 Reviewed up to `3ca2ac0`, item 2, pushed at 12:31 on 2026-10-31 with `751c272`, item 1, after the
 owner's first commit, its run green at 12:35 on the three systems in about three minutes, the first
-of this repository. Both commits keep the form, the three-mark subject, one sentence, the owner's
-identity as author and committer, no trailer (N 7.2 and N 7.6 kept at the first commit); the library
+of this repository. After it `6b10049`, item 3's first part, pushed at 14:13, its run awaited, the
+format and the geometry moved as they were under the namespace Levels, LevelPoint's conversions on
+System.Numerics.Vector3, Level.Load and Save on plain file paths through the BCL with an engine
+handing its own asset's text to Level.Parse (N 2.1), two cross-references to the engine's spawner
+made plain words, InternalsVisibleTo for the tests; 17 of 17 tests, the strict build clean, no
+engine named. Both commits keep the form, the three-mark subject, one sentence, the owner's identity
+as author and committer, no trailer (N 7.2 and N 7.6 kept at the first commit); the library
 references no engine (N 2.1). The documents are the engines' with the engine's name replaced and the
 engine-only lines dropped, COMMITS.md the game's with N 7.1's pointer rule in place of the legacy
 branch line, .gitignore with the dump folder, .claude and .ref; AGENTS.md's devlog row carries no
@@ -60,6 +65,7 @@ this module comes third, after Modeling, on Modeling.
     the texels, the normals and the hull counts. Third TrenchBroom's GameConfig.cfg and a base fgd
     with worldspawn and info_player_start, an engine's own classes staying in its own fgd; the
     prototype pictures stay in BevyCSharp until Modeling's move, since the modeling paints them.
+    First part done at `6b10049`.
 
 4. **The engines take the module.** Each engine adds this repository as a git submodule under
     `modules/` and references its project, its workflows checking submodules out, its own folder for

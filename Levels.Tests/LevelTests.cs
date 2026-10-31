@@ -13,7 +13,7 @@ public sealed class LevelTests
 {
     // A room's floor and a wall, a ramp whose slope meets its floor along one edge, a player's
     // start, a door with two outputs of one name, and a tree, at the default 32 units a meter.
-    private static readonly string Room = string.Join("\n",
+    internal static readonly string Room = string.Join("\n",
         "// Game: Generic",
         "// Format: Valve",
         "// entity 0",
