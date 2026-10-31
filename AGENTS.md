@@ -35,6 +35,7 @@ runs the tests on Linux, Windows and macOS on every push (NORM.md, N 6.1 and N 6
 | `.github` | The documents above but the README, and the build workflow |
 | `Levels` | The library, `Levels.csproj` |
 | `Levels.Tests` | The xunit tests of the library |
+| `TrenchBroom` | The game config and the base entity classes TrenchBroom edits a level with, which an engine copies and adds its own classes to |
 | `build` | The version, `version.txt`'s major and minor set by hand and `version.sh`, which prints it with the patch counted from the history |
 
 ## Conventions

@@ -1,0 +1,13 @@
+// The entity classes every level of the Valve 220 map format the module reads knows, for
+// TrenchBroom. An engine lists a file of its own classes beside this one in GameConfig.cfg's
+// definitions, and a class neither file names stands as its place and its keys for a game to read.
+
+@SolidClass = worldspawn : "The level's own brushes"
+[
+	_units_per_meter(float) : "Units a meter" : 32 : "How many units make a meter, 32 when none is given"
+]
+
+@PointClass size(-16 -16 0, 16 16 72) color(0 255 0) = info_player_start : "Where the player starts, its arrow the way the player faces, read by the game"
+[
+	angle(integer) : "Yaw" : 0 : "The way the player faces, in degrees about the vertical"
+]
