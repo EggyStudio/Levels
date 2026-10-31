@@ -13,4 +13,9 @@
         <WarningsAsErrors>$(WarningsAsErrors);CS1591;CS1574</WarningsAsErrors>
     </PropertyGroup>
 
+    <!-- The tests read the internals a level is checked by, a point's dot and cross products among them. -->
+    <ItemGroup>
+        <InternalsVisibleTo Include="Levels.Tests" />
+    </ItemGroup>
+
 </Project>
