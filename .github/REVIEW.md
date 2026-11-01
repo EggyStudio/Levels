@@ -7,21 +7,26 @@ of this repository. After it `6b10049`, item 3's first part, pushed at 14:13, it
 conversions on System.Numerics.Vector3, Level.Load and Save on plain file paths through the BCL with
 an engine handing its own asset's text to Level.Parse (N 2.1), two cross-references to the engine's
 spawner made plain words, InternalsVisibleTo for the tests; 17 of 17 tests, the strict build clean,
-no engine named. After it `01c44b0`, the second part, pushed at 14:15, its run awaited,
+no engine named. After it `01c44b0`, the second part, pushed at 14:15, its run green at 14:18,
 LevelGeometry.Meshes giving a LevelMesh a material in first-named order with Vector3 positions and
 normals, Vector2 texture coordinates and uint indices in meters with Y up, a face's corners fanned
 counterclockwise from outside, LevelGeometry.Hulls a LevelHull a solid brush, Texel and PictureSize
 public, ILevelMaterials.PictureSize the engine's answer (N 2.1) and the level's units a meter
-without one; 21 of 21 tests, the strict build clean. Both commits keep the form, the three-mark
-subject, one sentence, the owner's identity as author and committer, no trailer (N 7.2 and N 7.6
-kept at the first commit); the library references no engine (N 2.1). The documents are the engines'
-with the engine's name replaced and the engine-only lines dropped, COMMITS.md the game's with N
-7.1's pointer rule in place of the legacy branch line, .gitignore with the dump folder, .claude and
-.ref; AGENTS.md's devlog row carries no link until DEVLOG.md exists and its table of areas gains the
-rows item 2 adds. The skeleton sets ImportDirectoryBuildTargets false, since a submodule under
-modules/ would inherit an engine's Directory.Build.targets, makes a missing summary an error, loads
-the assembly by name in its one test, and build/version.sh prints 0.1.0; the strict build 0 warnings
-and 0 errors, the test passing. Before it `b40fa1d`, the license alone, the owner's.
+without one; 21 of 21 tests, the strict build clean. After it `a01b2df`, the third part, pushed at
+14:18, its run green at 14:21, TrenchBroom's GameConfig.cfg with the Valve format alone and a scale
+of a sixteenth, Levels.fgd with worldspawn's units a meter and info_player_start, a README saying an
+engine copies the folder under its own name and lists its own fgd beside, TrenchBroomTests on the
+config's format and scale and the fgd's key, AGENTS.md's TrenchBroom row; 23 of 23 tests, the strict
+build clean. Item 3 is done in its three parts. Both commits keep the form, the three-mark subject,
+one sentence, the owner's identity as author and committer, no trailer (N 7.2 and N 7.6 kept at the
+first commit); the library references no engine (N 2.1). The documents are the engines' with the
+engine's name replaced and the engine-only lines dropped, COMMITS.md the game's with N 7.1's pointer
+rule in place of the legacy branch line, .gitignore with the dump folder, .claude and .ref;
+AGENTS.md's devlog row carries no link until DEVLOG.md exists and its table of areas gains the rows
+item 2 adds. The skeleton sets ImportDirectoryBuildTargets false, since a submodule under modules/
+would inherit an engine's Directory.Build.targets, makes a missing summary an error, loads the
+assembly by name in its one test, and build/version.sh prints 0.1.0; the strict build 0 warnings and
+0 errors, the test passing. Before it `b40fa1d`, the owner's first commit alone.
 
 ## Now
 
@@ -70,7 +75,7 @@ this module comes third, after Modeling, on Modeling.
     the texels, the normals and the hull counts. Third TrenchBroom's GameConfig.cfg and a base fgd
     with worldspawn and info_player_start, an engine's own classes staying in its own fgd; the
     prototype pictures stay in BevyCSharp until Modeling's move, since the modeling paints them.
-    First part done at `6b10049`, second at `01c44b0`.
+    Done at `a01b2df`, the parts at `6b10049`, `01c44b0` and `a01b2df`.
 
 4. **The engines take the module.** Each engine adds this repository as a git submodule under
     `modules/` and references its project, its workflows checking submodules out, its own folder for
@@ -81,7 +86,7 @@ this module comes third, after Modeling, on Modeling.
     LevelKeys, the class registry, the materials by name, Render.CreateMesh from a LevelMesh and
     Bepu bodies from a LevelHull, a convex hull a brush in place of one mesh collider,
     WritePrototypePictures, the console commands, FeatureTestLevelTests and docs/levels.md pointing
-    here.
+    here. BevyCSharp took it at `f4e99658` on 2026-10-31, its item 85; 3DEngine's binding is open.
 
 ## Verdicts
 
@@ -108,8 +113,8 @@ it needs of a renderer, a world, a scheduler or a file system it takes through i
 declares, which each engine implements where it binds the module. A type of an engine's in this
 repository is a fault.
 
-4. **The license is the owner's choice.** The repository was made with the Mozilla Public License
-2.0, which stands; the owner may say otherwise.
+4. **The repository's terms are the owner's.** The repository was made by the owner with its terms
+   file in place, which stands as the owner set it and is spoken of nowhere else.
 
 5. **Who writes here.** The game's session writes items 1 and 2 for the six modules, being free
 while the game waits on the engine's package; the session that owns the code today moves it (item
